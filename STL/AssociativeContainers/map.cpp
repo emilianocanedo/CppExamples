@@ -113,5 +113,21 @@ int main()
 	print(multi.begin(), multi.end());
 	cout << endl << endl;
 
+	cout << "m3 before removes:" << endl;
+	print(m3.begin(), m3.end());
+	cout << endl;
+	cout << "Removing element for a certain position (iterator)" << endl;
+	map<int, int>::iterator it = m3.find(404);
+	m3.erase(it);
+	print(m3.begin(), m3.end());
+	cout << endl;
+	cout << "Removing certain key value (666) from m3" << endl;
+	m3.erase(666);
+	print(m3.begin(), m3.end());
+	cout << endl;
+	cout << "Removing all elements from m3" << endl;
+	m3.clear();
+	cout << "Size: " << m3.size() << endl << endl;
+
 	return 0;
 }
