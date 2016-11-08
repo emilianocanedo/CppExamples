@@ -72,12 +72,6 @@ int main()
 	print(m3.rbegin(), m3.rend());
 	cout << endl << endl;
 
-	/*
-	cout << "print a map with default comparator with const iterator..." << endl;
-	print(m3.cbegin(), m3.cend());
-	cout << endl << endl;
-	*/
-
 	cout << "m3 is empty?" << endl;
 	cout << (m3.empty() ? "true" : "false") << endl << endl; 
 
