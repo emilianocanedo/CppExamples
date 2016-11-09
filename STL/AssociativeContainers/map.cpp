@@ -7,7 +7,7 @@ using namespace std;
 template<class T>
 void print(T start, T end)
 {
-	while(start != end) {
+	while (start != end) {
 		cout << start->first << ":" << start->second << " ";
 		start++;
 	}
@@ -16,20 +16,20 @@ void print(T start, T end)
 template<class T, class U>
 void fillMap(map<T, T>& m, U start, U end)
 {
-	for(; start != end; ++start)
+	for (; start != end; ++start)
 		m.insert(pair<T, T>(*start, *start));
 }
 
 template<class T, class U>
 void fillMultimap(multimap<T, T>& m, U start, U end)
 {
-	for(; start != end; ++start)
+	for (; start != end; ++start)
 		m.insert(pair<T, T>(*start, *start));
 }
 
 void check(const pair<map<int, int>::iterator, bool>& result)
 {
-	if(result.second == true)
+	if (result.second == true)
 		cout << "A new key value (" << result.first->first << ") has been inserted" << endl;
 	else
 		cout << "Insertion failed, key " << result.first->first << " already exists" << endl;
