@@ -1,3 +1,13 @@
+/*
+The mismatch() function  compares two ranges of elements and returns iterators which point to the 
+place where those sequences differ. If the ranges are identical the function returns last1 and the 
+corresponding iterator value from the second sequence. The first version of the function used the 
+equality operator (==) for testing, the second one uses a custom made binary predicate for that 
+purpose. The comparison is performed between two elements from both collections. The predicate 
+should not modify values of the tested elements. The compared collections should be of the same 
+length.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

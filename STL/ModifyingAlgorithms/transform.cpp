@@ -1,3 +1,12 @@
+/*
+transform() applies given predicates (unary_op or binary_op) to elements of the collection 
+or collections and store results in another collection. The first version of transform calls 
+unary_op for each of the elements from the first range and the result of such a call is stored 
+in consecutive elements of the result  d_first range. The second version is working in a similar 
+manner, but it takes as arguments elements from two collections (ranges), and after applying a 
+given operation binary_op also stores result in the range d_first.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

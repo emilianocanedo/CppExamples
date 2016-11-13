@@ -1,3 +1,23 @@
+/*
+                    const value    generated value    range (iterators)    count
+fill                   x                                     x   
+fill_n                 x                                                     x
+generate                               x                     x   
+generate_n                             x                                     x
+
+All the above functions are used for filling elements of collections. Each of them does it in a 
+slightly different way. It is best to put them together and emphasize the differences.
+
+fill and fill_n assign the same value value to all elements specified either by range [first, last) 
+or by output iterator ofirst and the count of elements to fill.
+
+generate and generate_n work in a very similar manner, but instead of assigning the same value to 
+each of the elements, they assign value provided by a special function p which is called generator. 
+This function can return a different value each time it is invoked or might as well always return 
+the same value. In the second case it would then operate exactly as fill/fill_n. The table above 
+compares all the four filling functions.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

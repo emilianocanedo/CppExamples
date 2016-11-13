@@ -1,3 +1,12 @@
+/*
+The function copy_backward() copies all elements from the source range [first, last) starting 
+with element last-1 and puts them into the destination range starting at position d_last-1. 
+With each copy the operation source and target collection iterators are decreased.
+This function does not add or insert values into the destination collection (range), it only 
+assigns values, so the destination range must have enough space allocated. The source and target 
+ranges should not overlap in such a way that a particular element would be written before being read.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

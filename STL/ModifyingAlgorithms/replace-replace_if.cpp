@@ -1,3 +1,11 @@
+/*
+Both functions replace elements which they find fitting with new_value. The difference between 
+them is related to searching for values to be replaced. The first version (replace) simply compares 
+the given old_value with elements inside the range. If they are equal, the old value is replaced 
+by the new one. The second version (replace_if) replaces all elements for which a given predicate p 
+returns true. Both functions will find and replace all matching elements.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

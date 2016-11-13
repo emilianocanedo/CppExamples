@@ -1,3 +1,20 @@
+/*
+This function searches the range of elements first, last for the presence of any (single) element 
+from range s_first, s_last. If such a value is found in range first, last the iterator to it is 
+returned. If search is unsuccessful, then the function returns the last iterator. It is important 
+to understand that each value from the range s_first, s_last is treated independently; therefore 
+the order of elements in that sequence has no influence on the search result. Binary predicate is 
+used for comparing elements in ranges. It should return true if two elements are considered equal. 
+The first version of the function uses the equality operator (==) for the same purpose. Below you 
+can see a possible header of such a binary predicate:
+
+template <class Element1, class Element2> bool f(Element1 e1, Element2 e2);
+
+It can also be implemented as a functional object. It is important that this predicate does not 
+perform any modifications to the collection element, as it would be a violation of STL policy 
+towards the so-called non-modifying algorithms.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

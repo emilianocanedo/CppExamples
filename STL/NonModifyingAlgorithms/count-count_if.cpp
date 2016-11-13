@@ -1,3 +1,15 @@
+/*
+The first version (count()) counts the number of times value appears among the elements from the 
+range last, first. The second version returns the number of elements for which predicate p returned 
+true. Such a predicate might look as follows:
+
+template <class Element > bool f(Element e1);
+
+It can also be implemented as a functional object. It is important that this predicate does not 
+perform any modifications to the collection element, as it would be a violation of STL policy 
+towards the so-called non-modifying algorithms.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

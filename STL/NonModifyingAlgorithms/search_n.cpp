@@ -1,3 +1,9 @@
+/*
+This function searches the range first,last for the first sequence of count identical elements, 
+each equal to the given value value. The first version uses the equality operator to compare the 
+elements, the second version uses the given binary predicate p.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

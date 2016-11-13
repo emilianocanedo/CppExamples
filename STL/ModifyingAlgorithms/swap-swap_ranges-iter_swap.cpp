@@ -1,3 +1,11 @@
+/*
+Such functions as swap, swap_ranges and iter_swap perform swapping of elements. After the 
+invocation, the values of source and target are switched. The first function (swap) simply 
+exchanges values between two objects passed by reference. The second function exchanges 
+elements between entire ranges. The third function (iter_swap) is very similar to the first 
+one, but instead of references it accepts iterators as its arguments.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

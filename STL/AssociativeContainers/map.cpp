@@ -1,3 +1,16 @@
+/*
+Map and multimap are associative containers in which elements stored inside them are composed of 
+two parts:
+
+    key – which is used in association
+    mapped value – value which is associated with the key.
+
+Each element is identified by its key. Key is used to retrieve or access the mapped value inside 
+the map. Such access is very useful, for example you might want to build a structure in which you 
+associate a person’s name with its data record. As you can see in the map template definition, 
+the key and the mapped value do not have to be of the same type, which is a very useful feature.
+*/
+
 #include <map>
 #include <iostream>
 #include <functional>

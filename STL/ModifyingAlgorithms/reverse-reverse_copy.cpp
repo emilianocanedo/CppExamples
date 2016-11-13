@@ -1,8 +1,8 @@
 /*
-The function rotate() rotates the range left. It means that rotate() moves all the elements 
-in range left in such a manner that the element pointed to by n_first, will become the first 
-element of that range. All elements which preceded element n_first will still be located in 
-that range and element d_first-1 will become the new last element.
+The functions reverse() and reverse_copy() reverse the order of the elements in the source range 
+[first, last). The first range performs the reversal in place, which means that the source range 
+is affected. The second version – reverse_copy() does not affect the source range, but copies its 
+elements to the destination range in a reversed order.
 */
 
 #include <iostream>

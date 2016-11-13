@@ -1,3 +1,12 @@
+/*
+The for_each function calls the provided function f for every element of the range defined by 
+iterators first and last. As for_each algorithm belongs to the non-modifying category, function 
+f is not supposed to modify elements upon which it is called. Therefore, the value returned by 
+f is always ignored and is not assigned to a collection element. Nonetheless, it is still possible 
+to modify elements of collection, for example when an element is passed to the f function using 
+reference. One should avoid such behavior as it is not consistent with STL principles.
+*/
+
 #include <iostream>
 #include <list>
 #include <set>

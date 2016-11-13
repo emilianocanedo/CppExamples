@@ -1,3 +1,10 @@
+/*
+The equal function compares elements of two ranges and returns true if they are equal. The first 
+version uses the equality operator for the comparison whereas the second one uses the provided 
+binary predicate. Elements are compared by pairs; the first element from the first sequence, and 
+the second from the second one.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

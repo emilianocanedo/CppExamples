@@ -1,3 +1,17 @@
+/*
+The adjacent_find() function searches the range of elements first, last in order to find the first 
+pair of equal consecutive elements. If such a pair is found, the iterator to the first element is 
+returned. In the event of the search being unsuccessful the last value is returned. The second 
+version of the function uses a binary predicate instead of the equality operator (==) to perform 
+a comparison between two elements. Such a predicate might look as follows:
+
+template <class Element1, class Element2> bool f(Element1 e1, Element2 e2);
+
+It can also be implemented as a functional object. It is important that this predicate does not 
+perform any modifications to the collection element, as it would be a violation of STL policy 
+towards the so-called non-modifying algorithms.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

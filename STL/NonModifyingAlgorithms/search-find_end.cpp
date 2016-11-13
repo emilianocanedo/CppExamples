@@ -1,3 +1,20 @@
+/*
+Both functions search a given range of elements (last, first) for the presence of sequence of elements 
+specified by iterators s_first and s_last. search() algorithm will return an iterator to the first 
+occurrence of the sequence s_first, s_last, whereas the find_end() function will return an iterator 
+to the last occurrence of the mentioned sequence. This is the only difference between both algorithms.
+As should be noticed, both functions come in two versions. The second version must be provided with a 
+binary predicate used to perform a comparison between the two elements of the collection. The first 
+version uses the equality operator (==) for the same purpose. Below you can see a possible header of 
+such binary predicate:
+
+template <class Element1, class Element2> bool f(Element1 e1, Element2 e2);
+
+It can also be implemented as a functional object. It is important that this predicate does not 
+perform any modifications to the collection element, as it would be a violation of STL policy towards 
+the so-called non-modifying algorithms.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
